@@ -1,7 +1,7 @@
 pipeline{
 	agent { label 'jenkinsNode1'}
 	stages{
-		stage('Build'){
+		stage('Build stage'){
 			steps{
 				sh ''' 
 					echo "This is a Build stage which is running in JenkinsNode1"
