@@ -9,7 +9,7 @@ pipeline{
 				'''
 			}
 		}
-		stage('Deploy'){
+		stage('Deploy stage'){
 			steps{
 				sh ''' 
 				    echo "This is a Deploy stage which is running in JenkinsNode1"
