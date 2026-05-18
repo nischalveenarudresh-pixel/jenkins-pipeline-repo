@@ -2,7 +2,7 @@ pipeline{
 	agent none
 	stages{
 		stage('Build'){
-			agent : {label 'jenkinsNode1'}
+			agent {label 'jenkinsNode1'}
 			steps{
 				
 				sh ''' 
@@ -12,7 +12,7 @@ pipeline{
 			}
 	}
 		stage('Test'){
-			agent : {label 'jenkinsNode2'}
+			agent  {label 'jenkinsNode2'}
 			steps{
 				sh ''' 
 				echo "This is the Test stage"
@@ -21,7 +21,7 @@ pipeline{
 			}
 		}
 		stage('Deploy'){
-			agent : {label 'jenkinsNode1'}
+			agent  {label 'jenkinsNode1'}
 			steps{
 				
 				sh ''' 
